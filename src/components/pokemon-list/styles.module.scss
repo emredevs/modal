@@ -1,0 +1,38 @@
+.listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 96%;
+  max-width: 950px;
+  margin: 0 auto;
+  
+  .pokeCard {
+    width: 20%;
+    max-width: 250px;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+     
+    img{
+        width: 100%;
+    }
+    @media (max-width: 950px) {
+
+      background-color: red;
+      margin: 10px auto;
+      width: 50%;
+    }
+
+    @media (max-width: 750px) {
+      width: 80%;
+      margin: 10px auto;
+      background-color: gold;
+    }
+    @media (max-width: 300px) {
+      background-color: aqua;
+      width: 100%;
+      margin: 10px auto;
+    }
+  }
+}
